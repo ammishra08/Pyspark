@@ -44,7 +44,7 @@ Each project in this repository is self-contained and can be executed independen
 For example, if you have a project called "data_analysis", you can run it using the following command:
 
 ```bash
-spark-submit data_analysis.py
+spark-submit --master <master-url> --deploy-mode <deploy-mode> --conf <key<=<value> --driver-memory <value>g --executor-memory <value>g --py-files project_name.py 
 ```
 
 Please refer to the specific project's documentation for detailed instructions on how to run and utilize it effectively.
